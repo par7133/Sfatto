@@ -34,8 +34,8 @@ To help please donate by clicking <a href="https://gaox.io/l/dona1">https://gaox
 
 ![Sfatto in action #1](/Public/static/res/screenshot1.png)<br>
 
-![Sfatto in action #2](/Public/static/res/screenshot1.png)<br>
+![Sfatto in action #2](/Public/static/res/screenshot2.png)<br>
 
-![Sfatto in action #3](/Public/static/res/screenshot2.png)<br>
+![Sfatto in action #3](/Public/static/res/screenshot3.png)<br>
 
 Feedback: <a href="mailto:code@gaox.io" style="color:#e6d236;">code@gaox.io</a>
