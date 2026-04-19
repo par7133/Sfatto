@@ -183,34 +183,34 @@ function showEncodedPassword() {
         <span aria-hidden="true">&times;</span>
      </button>
 	
-Hello and welcome to Sfatto!<br>
-	  
-Sfatto is a light, simple, skinnable software on premise to own your social status and spec, like an avatar or robot as well.<br>
+Ciao e benvenuto su Sfatto!<br>
 
-Sfatto gives you three possible sources to feed your status:<br>
+Sfatto è un software on-premise leggero, semplice e personalizzabile per possedere il tuo status sociale e le tue specifiche, come un avatar o un robot.<br>
+
+Sfatto ti offre tre possibili fonti per alimentare il tuo status:<br>
 <ol>
-<li>Your status uploaded by you through the youravatar/detail page after a correct login</li>
-<li>Your status produced by APP_YOURAVATAR_STATUS_CMD</li>
-<li>Your default status saved in APP_YOURAVATAR_GENERIC_STATUS</li>
-</ol> 
-	   
-Sfatto is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br>
-	   
-First step, use the password box and salt fields to create the hash to insert in the config file. Remember to manually set there also the salt value.<br>
-	   
-As you are going to run Sfatto in the PHP process context, using a limited web server or phpfpm user, you must follow some simple directives for an optimal first setup:<br>
+<li>Il tuo stato caricato da te tramite la pagina your_avatar/detail dopo un login corretto</li>
+<li>Il tuo stato prodotto da APP_YOURAVATAR_STATUS_CMD</li>
+<li>Il tuo stato predefinito salvato in APP_YOURAVATAR_GENERIC_STATUS</li>
+</ol>
+
+Sfatto è rilasciato sotto licenza GPLv3, viene fornito AS-IS e non ci assumiamo alcuna responsabilità per il suo utilizzo improprio.<br>
+
+Primo passaggio, utilizzare la casella della password e i campi salt per creare l'hash da inserire nel file di configurazione. Ricordati di impostare manualmente lì anche il valore del salt.<br>
+
+Dato che eseguirai Sfatto nel contesto del processo PHP, utilizzando un server web limitato o un utente phpfpm, devi seguire alcune semplici direttive per una prima configurazione ottimale:<br>
 
 <ol>
-<li>Check the write permissions of your "data" folder in your web app Private path; and set its path in the config file.</li>
-<li>Set the default Locale.</li>
-<li>Set FILE_MAX_SIZE (remember that some PHP settings could limit the upload behaviour of Avatar Free too)</li>
-<li>Set BLOG_MAX_POSTS to limit the number of visible posts in the blog.</li>
-<li>Set YOURAVATAR_GENERIC_STATUS, your avatar default status.</li>
-<li>Set YOURAVATAR_STATUS_CMD, your avatar default status command.</li>
-</ol> 
+<li>Verifica i permessi di scrittura della tua cartella "dati" nel percorso privato della tua web app; e imposta il suo percorso nel file di configurazione.</li>
+<li>Imposta la lingua predefinita.</li>
+<li>Imposta FILE_MAX_SIZE (ricorda che alcune impostazioni PHP potrebbero limitare anche il comportamento di caricamento di Avatar Free)</li>
+<li>Imposta BLOG_MAX_POSTS per limitare il numero di post visibili nel blog.</li>
+<li>Imposta YOURAVATAR_GENERIC_STATUS, lo stato predefinito del tuo avatar.</li>
+<li>Imposta YOURAVATAR_STATUS_CMD, il comando di stato predefinito del tuo avatar.</li>
+</ol>
 
-You can access your avatar status by http://yoursitename.xyz/<your_avatar>.<br>
-You can access your avatar detail and spec by http://yoursitename.xyz/<your_avatar>/detail. Login with the password for the admin view. Drag-n-drop all your resources in the browser window. Files .txt feed your status, .png and .jpg your gallery, text links your network, etc.<br>
+Puoi accedere allo stato del tuo avatar da http://tuosito.xyz/your_avatar.<br>
+Puoi accedere ai dettagli e alle specifiche del tuo avatar tramite http://yoursitename.xyz/your_avatar/detail. Accedi con la password per la vista amministratore. Trascina e rilascia tutte le tue risorse nella finestra del browser. I file .txt alimentano il tuo stato, .png e .jpg la tua galleria, link di testo alla tua rete, ecc.<br>
        Screenshot:<br><br>
 		
 	   <a href="/Public/static/res/screenshot1.png"><img src="/Public/static/res/screenshot1.png" style="height:230px;width:350px;margin-top:7px;"></a>&nbsp;&nbsp;<a href="/Public/static/res/screenshot2.png"><img src="/Public/static/res/screenshot2.png" style="height:230px;width:350px;margin-top:7px;"></a>&nbsp;&nbsp;<a href="/Public/static/res/screenshot3.png"><img src="/Public/static/res/screenshot3.png" style="height:230px;width:350px;margin-top:7px;"></a><br><br>

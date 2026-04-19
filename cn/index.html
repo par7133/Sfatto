@@ -183,34 +183,34 @@ function showEncodedPassword() {
         <span aria-hidden="true">&times;</span>
      </button>
 	
-Hello and welcome to Sfatto!<br>
-	  
-Sfatto is a light, simple, skinnable software on premise to own your social status and spec, like an avatar or robot as well.<br>
+您好，欢迎来到 Sfatto！<br>
 
-Sfatto gives you three possible sources to feed your status:<br>
+Sfatto 是一款轻量、简单、可换肤的软件，可以拥有您的社会地位和规格，就像头像或机器人一样。<br>
+
+Sfatto 为您提供了三种可能的来源来满足您的状态：<br>
 <ol>
-<li>Your status uploaded by you through the youravatar/detail page after a correct login</li>
-<li>Your status produced by APP_YOURAVATAR_STATUS_CMD</li>
-<li>Your default status saved in APP_YOURAVATAR_GENERIC_STATUS</li>
-</ol> 
-	   
-Sfatto is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br>
-	   
-First step, use the password box and salt fields to create the hash to insert in the config file. Remember to manually set there also the salt value.<br>
-	   
-As you are going to run Sfatto in the PHP process context, using a limited web server or phpfpm user, you must follow some simple directives for an optimal first setup:<br>
+<li>正确登录后您通过头像/详细信息页面上传的状态</li>
+<li>APP_YOURAVATAR_STATUS_CMD 生成的您的状态</li>
+<li>您的默认状态已保存在 APP_YOURAVATAR_GENERIC_STATUS 中</li>
+</ol>
+
+Sfatto 根据 GPLv3 许可证发布，按原样提供，我们对其误用不承担任何责任。<br>
+
+第一步，使用密码框和盐字段创建要插入配置文件中的哈希值。请记住手动设置盐值。<br>
+
+当您要使用有限的 Web 服务器或 phpfpm 用户在 PHP 进程上下文中运行 Sfatto 时，您必须遵循一些简单的指令以获得最佳的首次设置：<br>
 
 <ol>
-<li>Check the write permissions of your "data" folder in your web app Private path; and set its path in the config file.</li>
-<li>Set the default Locale.</li>
-<li>Set FILE_MAX_SIZE (remember that some PHP settings could limit the upload behaviour of Avatar Free too)</li>
-<li>Set BLOG_MAX_POSTS to limit the number of visible posts in the blog.</li>
-<li>Set YOURAVATAR_GENERIC_STATUS, your avatar default status.</li>
-<li>Set YOURAVATAR_STATUS_CMD, your avatar default status command.</li>
-</ol> 
+<li>检查网络应用 Private 路径中“data”文件夹的写入权限；并在配置文件中设置其路径。</li>
+<li>设置默认区域设置。</li>
+<li>设置 FILE_MAX_SIZE（请记住，某些 PHP 设置也可能会限制 Avatar Free 的上传行为）</li>
+<li>设置 BLOG_MAX_POSTS 以限制博客中可见帖子的数量。</li>
+<li>设置 YOURAVATAR_GENERIC_STATUS，您的头像默认状态。</li>
+<li>设置 YOURAVATAR_STATUS_CMD，您的头像默认状态命令。</li>
+</ol>
 
-You can access your avatar status by http://yoursitename.xyz/<your_avatar>.<br>
-You can access your avatar detail and spec by http://yoursitename.xyz/<your_avatar>/detail. Login with the password for the admin view. Drag-n-drop all your resources in the browser window. Files .txt feed your status, .png and .jpg your gallery, text links your network, etc.<br>
+您可以通过 http://yoursitename.xyz/your_avatar 访问您的头像状态。<br>
+您可以通过 http://yoursitename.xyz/your_avatar/detail 访问您的头像详细信息和规格。使用管理视图的密码登录。将所有资源拖放到浏览器窗口中。文件 .txt 提供您的状态，.png 和 .jpg 文件提供您的图库，文本链接您的网络等。<br>
        Screenshot:<br><br>
 		
 	   <a href="/Public/static/res/screenshot1.png"><img src="/Public/static/res/screenshot1.png" style="height:230px;width:350px;margin-top:7px;"></a>&nbsp;&nbsp;<a href="/Public/static/res/screenshot2.png"><img src="/Public/static/res/screenshot2.png" style="height:230px;width:350px;margin-top:7px;"></a>&nbsp;&nbsp;<a href="/Public/static/res/screenshot3.png"><img src="/Public/static/res/screenshot3.png" style="height:230px;width:350px;margin-top:7px;"></a><br><br>
