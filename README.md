@@ -24,7 +24,7 @@ As you are going to run Sfatto in the PHP process context, using a limited web s
 </ol> 
 
 You can access your avatar status by http://yoursitename.xyz/<your_avatar>.<br>
-You can access your avatar detail by http://yoursitename.xyz/<your_avatar>/detail. Login with the password for the admin view. Drag-n-drop all your resources in the browser window. Files .txt feed your status, .png and .jpg your gallery, text links your network, etc.<br>
+You can access your avatar detail and spec by http://yoursitename.xyz/<your_avatar>/detail. Login with the password for the admin view. Drag-n-drop all your resources in the browser window. Files .txt feed your status, .png and .jpg your gallery, text links your network, etc.<br>
 
 For any need of software additions, plugins and improvements please write to <a href="mailto:info@numode.eu">info@numode.eu</a>  
 
