@@ -6,7 +6,14 @@
 
 Hello and welcome to Sfatto!<br>
 	  
-Sfatto is a light, simple, skinnable software on premise to own your social status and spec, like a robot as well.<br>
+Sfatto is a light, simple, skinnable software on premise to own your social status and spec, like an avatar or robot as well.<br>
+
+Sfatto gives you three possible sources to feed your status:<br>
+<ol>
+<li>Your status uploaded by your through the youravatar/detail</li>
+<li>Your status produced by APP_YOURAVATAR_STATUS_CMD</li>
+<li>Your default status saved in APP_YOURAVATAR_GENERIC_STATUS</li>
+</ol> 
 	   
 Sfatto is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br>
 	   
