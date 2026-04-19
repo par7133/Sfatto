@@ -19,8 +19,8 @@ As you are going to run Sfatto in the PHP process context, using a limited web s
 <li>Set the default Locale.</li>
 <li>Set FILE_MAX_SIZE (remember that some PHP settings could limit the upload behaviour of Avatar Free too)</li>
 <li>Set BLOG_MAX_POSTS to limit the number of visible posts in the blog.</li>
-<li>Set GENERIC_STATUS, your avatar default status.</li>
-<li>Set STATUS_CMD, your avatar default status command.</li>
+<li>Set YOURAVATAR_GENERIC_STATUS, your avatar default status.</li>
+<li>Set YOURAVATAR_STATUS_CMD, your avatar default status command.</li>
 </ol> 
 
 You can access your avatar status by http://yoursitename.xyz/<your_avatar>.<br>
