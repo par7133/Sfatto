@@ -200,13 +200,14 @@ include("../Private/classes/seaminer/init.inc");
          $destFileName = $date . "-" . $rnd . substr($google, $i-1, 1) . "|" . str_replace(" ", "_", $originalFilename) . ".$fileExt";
 
          //XXX
-         $seaminer_sign = $date . "-" . $rnd . substr($google, $i-1, 1);
-         $seaminer_title = str_replace(" ", "_", $originalFilename); 
-         $seaminer_text = file_get_contents($tmpFullPath);
-         $seaminer_account = AVATAR_NAME; 
+		 if ($originalFileExt==="txt") {   
+            $seaminer_sign = $date . "-" . $rnd . substr($google, $i-1, 1);
+            $seaminer_title = str_replace(" ", "_", $originalFilename); 
+            $seaminer_text = file_get_contents($tmpFullPath);
+            $seaminer_account = AVATAR_NAME; 
          
-         seacreateNewUpd($seaminer_account, $seaminer_sign, $seaminer_title, $seaminer_text);
-
+            seacreateNewUpd($seaminer_account, $seaminer_sign, $seaminer_title, $seaminer_text);
+		 } 
        } else {
          return; 
        }	   
