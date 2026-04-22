@@ -23,6 +23,10 @@ function seacreateNewUpd($newupdAccount, $newupdSign, $newupdTitle, $newupdText)
   $destFileName = $newupdFilename;
   $destPath = SEAMINER_CACHE_PATH . DIRECTORY_SEPARATOR . $newupdAccount . DIRECTORY_SEPARATOR . $destFileName;
 
+  if (!is_readable(SEAMINER_CACHE_PATH . DIRECTORY_SEPARATOR . $newupdAccount)) {
+    mkdir(SEAMINER_CACHE_PATH . DIRECTORY_SEPARATOR . $newupdAccount);
+  }
+
   copy($sourcePath, $destPath);
 
   $fpath = $destPath;
